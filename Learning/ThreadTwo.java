@@ -1,6 +1,7 @@
 public class ThreadTwo implements Runnable {
     Accum a = Accum.getAccum();
     
+    public void run(){    
         try {
             Thread.sleep(50);
         } catch (InterruptedException e) {
