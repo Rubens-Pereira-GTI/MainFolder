@@ -1,6 +1,6 @@
 package Jukebox;
 
-public class Song {
+public class Song implements Comparable<Song>{
     private String title;
     private String artist;
     private String rating;
@@ -28,6 +28,25 @@ public class Song {
 
     public String toString(){
         return title;
+    }
+
+    
+    public int compareTo(Song song) {
+        return title.compareTo(song.getTitle());        
+    }
+
+    //complete a sobreposição do método equals, faça com que ele compare os titulos 
+    // private String title;
+    public boolean equals(Object s){
+        Song song = (Song) s;
+        return getArtist().equals(song.getArtist());
+    }
+
+    //complete a sobreposição do método hashCode, faça com que ele compare os titulos 
+    // private String title;
+    // getTitle()
+    public int hashCode(){
+        return getArtist().hashCode();
     }
 
 }
