@@ -14,7 +14,7 @@ public class TestThreads {
 
         ThreadTwo t2 = new ThreadTwo();
         Thread two = new Thread(t2);
-
+        System.out.println();
         one.start();
         two.start();
     }

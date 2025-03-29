@@ -22,7 +22,7 @@ public class TesteGenerics {
         takeAnimals2(dogsList);
     }
     public void takeAnimals(ArrayList<? extends Animal> animais){        
-       animais.add(new Cat());
+       
     }
     public void takeAnimals2(Animal[] animais){        
        animais[0] = new Cat();
